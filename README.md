@@ -17,7 +17,21 @@ A single-page, interactive resume site built with plain HTML/CSS/JS (no build st
 - `style.css` — design system + responsive layout
 - `script.js` — interactions (theme toggle, reveal animations, counters, filters, nav)
 - `assets/headshot.jpg` — profile photo
-- `Ashish_Gupta_AI_PO_Resume.docx` — downloadable résumé
+- `Ashish_Gupta_AI_PO_Resume.pdf` — downloadable résumé (linked from the nav bar)
+- `Ashish_Gupta_AI_PO_Resume.docx` — original Word source, kept for editing
+- `resume-print/resume.html` — print-optimized source for the PDF (ATS-friendly, tuned to fit exactly 2 pages)
+
+### Regenerating the résumé PDF
+
+After editing `resume-print/resume.html`, regenerate the PDF with headless Chrome and copy it to the site root:
+
+```bash
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
+  --headless --disable-gpu --no-pdf-header-footer \
+  --print-to-pdf="resume-print/Ashish_Gupta_AI_PO_Resume.pdf" \
+  --print-to-pdf-no-header "file://$(pwd)/resume-print/resume.html"
+mv resume-print/Ashish_Gupta_AI_PO_Resume.pdf Ashish_Gupta_AI_PO_Resume.pdf
+```
 
 ## Running locally
 
