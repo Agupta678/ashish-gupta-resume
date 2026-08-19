@@ -35,9 +35,10 @@
   .summary { margin: 0 0 4px; text-align: justify; }
   .clearance { font-size: 9.4pt; color: #444; margin-top: 5px; font-style: italic; }
 
-  .skills-grid { width: 100%; border-collapse: collapse; }
-  .skills-grid td { padding: 3px 0; vertical-align: top; font-size: 10.1pt; }
-  .skills-grid .lbl { font-weight: 700; width: 128px; color: #10233f; white-space: nowrap; padding-right: 8px; }
+  .skills-grid { width: 100%; }
+  .skills-row { display: flex; padding: 3px 0; font-size: 10.1pt; }
+  .skills-row .lbl { flex: 0 0 128px; font-weight: 700; color: #10233f; }
+  .skills-row .val { flex: 1; }
 
   .job { margin-bottom: 11px; }
   .job:last-child { margin-bottom: 0; }
@@ -66,10 +67,10 @@
   <div class="title-line">AI Product Manager/Owner &nbsp;|&nbsp; GenAI &amp; LLM Products &nbsp;|&nbsp; Fintech, Media &amp; Enterprise</div>
   <div class="contact-line">
     <span>Exton, PA</span><span class="dot">&middot;</span>
-    <span>703-678-5431</span><span class="dot">&middot;</span>
-    <span>analystgupta5@gmail.com</span><span class="dot">&middot;</span>
-    <span>linkedin.com/in/analystgupta5</span><span class="dot">&middot;</span>
-    <span>agupta678.github.io/ashish-gupta-resume</span>
+    <span><a href="tel:+17036785431">703-678-5431</a></span><span class="dot">&middot;</span>
+    <span><a href="mailto:analystgupta5@gmail.com">analystgupta5@gmail.com</a></span><span class="dot">&middot;</span>
+    <span><a href="https://www.linkedin.com/in/analystgupta5/" target="_blank" rel="noopener">linkedin.com/in/analystgupta5</a></span><span class="dot">&middot;</span>
+    <span><a href="https://agupta678.github.io/ashish-gupta-resume/" target="_blank" rel="noopener">agupta678.github.io/ashish-gupta-resume</a></span>
   </div>
   <hr class="rule">
 
@@ -78,13 +79,13 @@
   <p class="clearance">U.S. Citizen and eligible to obtain a U.S. security clearance.</p>
 
   <h2 class="section">Skills &amp; Certifications</h2>
-  <table class="skills-grid">
-    <tr><td class="lbl">AI &amp; ML</td><td>Large Language Models (LLM), Prompt Engineering, Generative AI, RAG, AI Product Management, AI Output Evaluation, Microsoft 365 Copilot, GitHub Copilot, Claude AI</td></tr>
-    <tr><td class="lbl">Product &amp; Agile</td><td>Product Management, Product Strategy, Backlog Management, Epics &amp; User Stories, Acceptance Criteria, PI Planning, Sprint Planning, SAFe Agile, Scrum</td></tr>
-    <tr><td class="lbl">Technical</td><td>JIRA, Confluence, SQL, Postman, Swagger, Balsamiq, MS Visio, Lucid, ServiceNow, Azure DevOps, API-Driven Development</td></tr>
-    <tr><td class="lbl">Domain</td><td>Fintech, Financial Services, Media &amp; Entertainment, Enterprise SaaS, Regulatory Compliance, Contract Lifecycle Management</td></tr>
-    <tr><td class="lbl">Certifications</td><td>Google AI Essentials &middot; AI For Everyone (DeepLearning.AI) &middot; Elements of AI (Univ. of Helsinki) &middot; AI-Empowered SAFe&reg; 6 PO/PM &middot; PSPO I &middot; PSM I &middot; CSM</td></tr>
-  </table>
+  <div class="skills-grid">
+    <div class="skills-row"><div class="lbl">AI &amp; ML</div><div class="val">Large Language Models (LLM), Prompt Engineering, Generative AI, RAG, AI Product Management, AI Output Evaluation, Microsoft 365 Copilot, GitHub Copilot, Claude AI</div></div>
+    <div class="skills-row"><div class="lbl">Product &amp; Agile</div><div class="val">Product Management, Product Strategy, Backlog Management, Epics &amp; User Stories, Acceptance Criteria, PI Planning, Sprint Planning, SAFe Agile, Scrum</div></div>
+    <div class="skills-row"><div class="lbl">Technical</div><div class="val">JIRA, Confluence, SQL, Postman, Swagger, Balsamiq, MS Visio, Lucid, ServiceNow, Azure DevOps, API-Driven Development</div></div>
+    <div class="skills-row"><div class="lbl">Domain</div><div class="val">Fintech, Financial Services, Media &amp; Entertainment, Enterprise SaaS, Regulatory Compliance, Contract Lifecycle Management</div></div>
+    <div class="skills-row"><div class="lbl">Certifications</div><div class="val">Google AI Essentials &middot; AI For Everyone (DeepLearning.AI) &middot; Elements of AI (Univ. of Helsinki) &middot; AI-Empowered SAFe&reg; 6 PO/PM &middot; PSPO I &middot; PSM I &middot; CSM</div></div>
+  </div>
 
   <h2 class="section">Professional Experience</h2>
 
