@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashish Gupta — AI Product Manager</title>
+<meta name="description" content="Ashish Gupta — AI Product Manager/Owner specializing in GenAI & LLM products across Fintech, Media, and Enterprise technology.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">AG<span class="dot">.</span></a>
+    <div class="nav-links">
+      <a href="#about" data-section="about">About</a>
+      <a href="#experience" data-section="experience">Experience</a>
+      <a href="#skills" data-section="skills">Skills</a>
+      <a href="#projects" data-section="projects">Projects</a>
+      <a href="#contact" data-section="contact">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button id="themeToggle" aria-label="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a href="Ashish_Gupta_AI_PO_Resume.docx" class="btn btn-ghost btn-sm" download>Résumé</a>
+    </div>
+    <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="hero-inner container">
+      <div class="hero-text">
+        <div class="eyebrow reveal">
+          <span class="pulse-dot"></span>
+          Open to AI Product Owner / Manager roles
+        </div>
+        <h1 class="reveal">
+          Hi, I'm <span class="highlight">Ashish Gupta</span>
+        </h1>
+        <h2 class="hero-role reveal">
+          <span id="typedRole"></span><span class="cursor-blink">|</span>
+        </h2>
+        <p class="hero-lede reveal">
+          12+ years turning ambiguous business problems into shipped product —
+          at Deloitte, Disney, Moody's &amp; Broadridge. Now applying that same
+          rigor to <strong>GenAI &amp; LLM products</strong>: prompt systems,
+          structured AI outputs, and evaluation frameworks that make model
+          quality measurable.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#contact" class="btn btn-primary">Let's talk <span class="arrow">→</span></a>
+          <a href="https://www.linkedin.com/in/analystgupta5/" target="_blank" rel="noopener" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.11 20.45H3.56V9h3.55v11.45z"/></svg>
+            LinkedIn
+          </a>
+          <a href="mailto:analystgupta5@gmail.com" class="btn btn-ghost">Email me</a>
+        </div>
+        <div class="hero-meta reveal">
+          <span>📍 Exton, PA</span>
+          <span class="sep">·</span>
+          <span>🇺🇸 U.S. Citizen — clearance eligible</span>
+        </div>
+      </div>
+
+      <div class="hero-photo reveal">
+        <div class="photo-frame">
+          <div class="photo-ring"></div>
+          <img src="assets/headshot.jpg" alt="Portrait of Ashish Gupta" width="420" height="420">
+          <div class="photo-badge">
+            <span class="badge-icon">✦</span> AI PM
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-cue">
+      <span>Scroll</span>
+      <div class="scroll-line"><div class="scroll-dot"></div></div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-band">
+    <div class="container stats-grid">
+      <div class="stat reveal">
+        <div class="stat-number" data-count="12" data-suffix="+">0</div>
+        <div class="stat-label">Years of product &amp; BA experience</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat-number" data-count="40" data-suffix="%">0</div>
+        <div class="stat-label">Faster story authoring with AI-driven workflows</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat-number" data-count="5" data-suffix="">0</div>
+        <div class="stat-label">Enterprise platforms — Deloitte, Disney, Moody's, Broadridge, Aetna</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat-number" data-count="6" data-suffix="">0</div>
+        <div class="stat-label">AI &amp; Agile certifications earned</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-kicker">01 — About</span>
+        <h2>From acceptance criteria to AI evaluation frameworks</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>
+            I'm an AI Product Manager/Owner with over a decade leading product
+            and business analysis across finance, media, and enterprise
+            technology — <strong>Deloitte, Disney, Moody's, and Broadridge</strong> —
+            now applying that same rigor to AI product development.
+          </p>
+          <p>
+            My day-to-day: designing and iterating LLM prompts, structuring AI
+            outputs for clean system integration, and building evaluation
+            frameworks that measure output quality — the same discipline I've
+            always brought to acceptance criteria and product metrics, now
+            pointed at generative AI features.
+          </p>
+          <p>
+            I'm actively deepening hands-on experience with <strong>RAG, AI
+            agents, and LLM evaluation</strong> through self-directed projects
+            (see below 👇), and looking for AI Product Owner/Manager roles —
+            especially teams integrating GenAI into existing fintech or
+            enterprise products.
+          </p>
+        </div>
+        <div class="about-side reveal">
+          <div class="info-card">
+            <h3>Currently</h3>
+            <p>AI Product Manager/Owner @ Deloitte</p>
+            <span class="tag tag-live">Active</span>
+          </div>
+          <div class="info-card">
+            <h3>Focus areas</h3>
+            <div class="chip-row">
+              <span class="chip">Prompt Engineering</span>
+              <span class="chip">RAG</span>
+              <span class="chip">AI Agents</span>
+              <span class="chip">LLM Evaluation</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <h3>Education</h3>
+            <p>B.S. Finance — George Mason University, 2009</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-kicker">02 — Experience</span>
+        <h2>Where I've built product</h2>
+      </div>
+
+      <div class="timeline">
+
+        <article class="tl-item reveal">
+          <div class="tl-marker"><div class="tl-dot"></div></div>
+          <div class="tl-card">
+            <div class="tl-card-head">
+              <div>
+                <h3>AI Product Manager/Owner</h3>
+                <div class="tl-company">Deloitte</div>
+              </div>
+              <div class="tl-date">Jan 2025 — Present</div>
+            </div>
+            <ul>
+              <li>Led AI-augmented product ownership for Docubuilder, a Component Content Management SaaS platform serving Morgan Stanley across mutual fund, equity, and mortgage business lines.</li>
+              <li>Designed reusable AI-driven prompt libraries and LLM workflows that convert stakeholder discussions, emails, and meeting notes into Jira-ready user stories and acceptance criteria — cutting story authoring time by <strong>~40%</strong>.</li>
+              <li>Applied Microsoft 365 Copilot and GitHub Copilot for AI-assisted requirements analysis, catching ambiguities and compliance gaps before development.</li>
+              <li>Defined AI product roadmaps and supported client enablement through solution positioning and demos for enterprise clients.</li>
+              <li>Owned end-to-end delivery for API-driven system integrations and migrations within a SAFe Agile framework.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="tl-item reveal">
+          <div class="tl-marker"><div class="tl-dot"></div></div>
+          <div class="tl-card">
+            <div class="tl-card-head">
+              <div>
+                <h3>Product Owner / Lead Business Analyst</h3>
+                <div class="tl-company">Broadridge Financial Solutions</div>
+              </div>
+              <div class="tl-date">Jan 2023 — Dec 2024</div>
+            </div>
+            <ul>
+              <li>Delivered a Contract Lifecycle Management (CLM) application for a multinational professional services firm, defining requirements for contract automation across the full lifecycle.</li>
+              <li>Led requirements elicitation and backlog management, translating complex business rules into structured user stories with measurable acceptance criteria.</li>
+              <li>Partnered with engineering, QA, and compliance across the full SDLC in an Agile/Scrum delivery model.</li>
+              <li>Facilitated JAD sessions and cross-functional workshops with senior stakeholders.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="tl-item reveal">
+          <div class="tl-marker"><div class="tl-dot"></div></div>
+          <div class="tl-card">
+            <div class="tl-card-head">
+              <div>
+                <h3>Sr. Consultant</h3>
+                <div class="tl-company">Aetna / Infosys</div>
+              </div>
+              <div class="tl-date">May 2021 — Dec 2022</div>
+            </div>
+            <ul>
+              <li>Supported API-driven product development for a healthcare technology platform — Swagger documentation, API response mapping, and Postman-validated integrations.</li>
+              <li>Developed Gherkin-based user stories in Jira; facilitated standups, sprint planning, and backlog refinement.</li>
+              <li>Analyzed end-user workflow challenges and prioritized backlog items with the Product Owner.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="tl-item reveal">
+          <div class="tl-marker"><div class="tl-dot"></div></div>
+          <div class="tl-card">
+            <div class="tl-card-head">
+              <div>
+                <h3>Sr. Technical Product Manager</h3>
+                <div class="tl-company">The Walt Disney Company (ESPN)</div>
+              </div>
+              <div class="tl-date">Oct 2017 — May 2021</div>
+            </div>
+            <ul>
+              <li>Defined roadmaps and prioritized backlogs for ESPN's customer-facing Cloud Web Application API platform — a microservices architecture supporting international media businesses.</li>
+              <li>Oversaw migration of legacy Java/Oracle systems to a modern cloud platform, reducing technical debt and speeding feature delivery.</li>
+              <li>Partnered with engineering, design, and business stakeholders to translate strategy into executable backlogs and sprint plans.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="tl-item reveal">
+          <div class="tl-marker"><div class="tl-dot"></div></div>
+          <div class="tl-card">
+            <div class="tl-card-head">
+              <div>
+                <h3>Sr. Business Analyst</h3>
+                <div class="tl-company">Moody's Investors Service</div>
+              </div>
+              <div class="tl-date">Dec 2014 — Jul 2017</div>
+            </div>
+            <ul>
+              <li>Led IT integration and migration of eFM functions to Moodys.com, eliminating legacy environments and integrating authentication with Moody's administrative systems.</li>
+              <li>Authored BRDs, facilitated JAD sessions, led UAT, and provided stakeholder status updates on a high-visibility financial data platform migration.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="tl-item tl-item-compact reveal">
+          <div class="tl-marker"><div class="tl-dot tl-dot-sm"></div></div>
+          <div class="tl-card tl-card-compact">
+            <div class="tl-card-head">
+              <div>
+                <h3>Earlier Experience</h3>
+                <div class="tl-company">Sandata Technologies · Bed Bath &amp; Beyond</div>
+              </div>
+            </div>
+            <p class="tl-compact-text">Sr. Business Analyst, Sandata Technologies (Apr 2013 – Sep 2014) &nbsp;|&nbsp; Business Analyst, Bed Bath &amp; Beyond (Nov 2011 – Apr 2013)</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-kicker">03 — Skills</span>
+        <h2>Toolkit</h2>
+      </div>
+
+      <div class="filter-row reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai">AI &amp; Machine Learning</button>
+        <button class="filter-btn" data-filter="product">Product &amp; Agile</button>
+        <button class="filter-btn" data-filter="technical">Technical</button>
+        <button class="filter-btn" data-filter="domain">Domain</button>
+      </div>
+
+      <div class="skills-grid" id="skillsGrid">
+        <!-- AI -->
+        <span class="skill-pill" data-cat="ai">Large Language Models (LLM)</span>
+        <span class="skill-pill" data-cat="ai">Prompt Engineering</span>
+        <span class="skill-pill" data-cat="ai">Generative AI</span>
+        <span class="skill-pill" data-cat="ai">RAG (Retrieval-Augmented Generation)</span>
+        <span class="skill-pill" data-cat="ai">AI Product Management</span>
+        <span class="skill-pill" data-cat="ai">AI Output Evaluation</span>
+        <span class="skill-pill" data-cat="ai">Microsoft 365 Copilot</span>
+        <span class="skill-pill" data-cat="ai">GitHub Copilot</span>
+        <span class="skill-pill" data-cat="ai">Claude AI</span>
+        <!-- Product -->
+        <span class="skill-pill" data-cat="product">Product Management</span>
+        <span class="skill-pill" data-cat="product">Product Strategy</span>
+        <span class="skill-pill" data-cat="product">Backlog Management</span>
+        <span class="skill-pill" data-cat="product">Epics &amp; User Stories</span>
+        <span class="skill-pill" data-cat="product">Acceptance Criteria</span>
+        <span class="skill-pill" data-cat="product">PI Planning</span>
+        <span class="skill-pill" data-cat="product">Sprint Planning</span>
+        <span class="skill-pill" data-cat="product">SAFe Agile</span>
+        <span class="skill-pill" data-cat="product">Scrum</span>
+        <!-- Technical -->
+        <span class="skill-pill" data-cat="technical">JIRA</span>
+        <span class="skill-pill" data-cat="technical">Confluence</span>
+        <span class="skill-pill" data-cat="technical">SQL</span>
+        <span class="skill-pill" data-cat="technical">Postman</span>
+        <span class="skill-pill" data-cat="technical">Swagger</span>
+        <span class="skill-pill" data-cat="technical">Balsamiq</span>
+        <span class="skill-pill" data-cat="technical">MS Visio</span>
+        <span class="skill-pill" data-cat="technical">Lucid</span>
+        <span class="skill-pill" data-cat="technical">ServiceNow</span>
+        <span class="skill-pill" data-cat="technical">Azure DevOps</span>
+        <span class="skill-pill" data-cat="technical">API-Driven Development</span>
+        <!-- Domain -->
+        <span class="skill-pill" data-cat="domain">Fintech</span>
+        <span class="skill-pill" data-cat="domain">Financial Services</span>
+        <span class="skill-pill" data-cat="domain">Media &amp; Entertainment</span>
+        <span class="skill-pill" data-cat="domain">Enterprise SaaS</span>
+        <span class="skill-pill" data-cat="domain">Regulatory Compliance</span>
+        <span class="skill-pill" data-cat="domain">Contract Lifecycle Management</span>
+      </div>
+
+      <div class="cert-strip reveal">
+        <div class="cert-strip-title">Certifications</div>
+        <div class="cert-list">
+          <span class="cert-pill">Google AI Essentials</span>
+          <span class="cert-pill">AI For Everyone — DeepLearning.AI</span>
+          <span class="cert-pill">Elements of AI — Univ. of Helsinki</span>
+          <span class="cert-pill">AI-Empowered SAFe® 6 PO/PM</span>
+          <span class="cert-pill">PSPO I</span>
+          <span class="cert-pill">PSM I</span>
+          <span class="cert-pill">CSM</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-kicker">04 — Projects</span>
+        <h2>What I'm building</h2>
+        <p class="section-sub">Self-directed projects to build hands-on depth in RAG, agents, and LLM evaluation — the practical complement to 12+ years of product leadership.</p>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card project-placeholder reveal">
+          <div class="project-status">
+            <span class="status-dot"></span> In progress
+          </div>
+          <h3>RAG / AI Agent Project</h3>
+          <p>Currently building — details and a live link are coming soon. Check back, or ask me about it directly.</p>
+        </div>
+        <div class="project-card project-placeholder reveal">
+          <div class="project-status">
+            <span class="status-dot"></span> In progress
+          </div>
+          <h3>LLM Evaluation Framework</h3>
+          <p>Currently building — details and a live link are coming soon. Check back, or ask me about it directly.</p>
+        </div>
+        <div class="project-card project-cta reveal">
+          <h3>More on the way</h3>
+          <p>This section updates as projects ship. Follow along on <a href="https://www.linkedin.com/in/analystgupta5/" target="_blank" rel="noopener">LinkedIn</a> or check the <a href="https://github.com/Agupta678" target="_blank" rel="noopener" id="githubProfileLink">GitHub profile</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="contact-inner reveal">
+        <span class="section-kicker">05 — Contact</span>
+        <h2>Let's build something with AI.</h2>
+        <p>Open to AI Product Owner/Manager roles — especially teams integrating GenAI into existing fintech or enterprise products. Reach out, I'd love to talk.</p>
+        <div class="contact-actions">
+          <a href="mailto:analystgupta5@gmail.com" class="btn btn-primary btn-lg">
+            ✉️ analystgupta5@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/analystgupta5/" target="_blank" rel="noopener" class="btn btn-secondary btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.11 20.45H3.56V9h3.55v11.45z"/></svg>
+            Connect on LinkedIn
+          </a>
+        </div>
+        <div class="contact-meta">
+          <span>📍 Exton, PA</span>
+          <span class="sep">·</span>
+          <span>🇺🇸 U.S. Citizen — clearance eligible</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Ashish Gupta.</span>
+    <span class="footer-sep">Built with intent, not a template.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
