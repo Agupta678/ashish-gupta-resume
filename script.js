@@ -2,12 +2,7 @@
 const themeToggle = document.getElementById('themeToggle');
 const root = document.documentElement;
 const savedTheme = localStorage.getItem('theme');
-const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-if (savedTheme) {
-  root.setAttribute('data-theme', savedTheme);
-} else {
-  root.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
-}
+root.setAttribute('data-theme', savedTheme || 'dark');
 themeToggle.addEventListener('click', () => {
   const current = root.getAttribute('data-theme');
   const next = current === 'dark' ? 'light' : 'dark';
