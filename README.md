@@ -1,6 +1,6 @@
 # Ashish Gupta — Interactive Resume
 
-Live site: _(GitHub Pages link goes here once published)_
+Live site: https://agupta678.github.io/ashish-gupta-resume/
 
 A single-page, interactive resume site built with plain HTML/CSS/JS (no build step, no frameworks). Includes:
 
